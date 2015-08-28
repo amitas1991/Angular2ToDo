@@ -1,0 +1,6 @@
+<ul>
+	<li *for='#todo of items'>
+		<input type="checkbox" [value]="todo.isCompleted" (click)="completedToDo(todo)" >
+		<div [class]="{completed: todo.isCompleted}">{{todo.value}} {{todo.isCompleted}}</div>
+	</li>
+</ul>
